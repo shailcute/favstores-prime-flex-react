@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+        <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+<link rel="stylesheet" href="index.css">
+<link href="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        
+    <div class="container">
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">HOME</a>
+        <a href="#news">SHOP</a>
+        <a href="#contact">PRODUCTS</a>
+        <div class="dropdown">
+          <button class="dropbtn">ELEMENTS 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Products</a>
+            <a href="#">Typography</a>
+            <a href="#">Titles</a>
+            <a href="#">Banners</a>
+          </div>
+       
+        </div> 
+        <a href="#about">BLOG</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      
+      <div style="padding-left:16px">
+       
+      </div>
+        
+    </header>
+<div class="banner-slider">
+<div class="slick-carousel">
+    <div >
+      <div class="slide-content"><img src="images/slide-1.jpg">
+        <div class="slise-text">
+          <h6>NEW COLLECTION</h6>
+         <h3>WOMAEN'S</h3>
+         <h4> Sportswear & Joggers</h4>
+         <h5>2019</h5>
+
+         <div class="banner-tXT"></div>
+         <button type="button" >Discover Now</button>
+         </div>
+    </div>
+  </div>
+    <div>
+      <div class="slide-content"><img src="images/slide-2.jpg" alt="Image Desc">
+        <div class="slise-text">
+          <h6>NEW COLLECTION</h6>
+         <h3>Men’s </h3>
+         <h4> Coats & Jackets</h4>
+         <!-- <h5>2019</h5> -->
+
+         <div class="banner-tXT"></div>
+         <button type="button" >Discover Now</button>
+         </div>
+    </div>
+  </div>
+    <div><div class="slide-content"><img src="images/slide-3.jpg" alt="Image Desc">
+      <div class="slise-text">
+        <h6>Deals and Promotions</h6>
+       <h3>Sneakers & Athletic Shoes</h3>
+       <!-- <h4> sportswear & joggers</h4> -->
+       <h5>from $9.99</h5>
+
+       <div class="banner-tXT"></div>
+       <button type="button" >Discover Now</button>
+       </div>
+    </div></div>
+  </div>
+</div>
+
+</div>
+<div class="flex-container">
+  <div class="flex-item">
+  <a href="#">
+    <img src="https://portotheme.com/html/molla/assets/images/demos/demo-9/banners/banner-1.jpg" />
+    <div class="banner-content position-bottom">
+     <h4>Clearance</h4>
+    <h3>Waterproof</h3>
+    <div class="banner-text">from $19.00</div>
+    <button type="button" >Discover Now</button>
+    </div>
+    </a>
+  </div>
+    <div class="flex-item">
+    <div class="flex--item">
+  <a href="#">
+    <img src="https://portotheme.com/html/molla/assets/images/demos/demo-9/banners/banner-2.jpg" />
+    <div class="banner-content position-bottom">
+     <h4>New Arrivals</h4>
+    <h3>Accessories <br> and Shoes</h3>
+    <!-- <div class="banner-text">from $19.00</div> -->
+    <button type="button" >Shop Now</button>
+    </div>
+    </a>
+    </div>
+     <div class="flex--item">
+  <a href="#">
+    <img src="https://portotheme.com/html/molla/assets/images/demos/demo-9/banners/banner-3.jpg" />
+    <div class="banner-content position-bottom">
+     <h4>New Arrivals</h4>
+    <h3>Spring 2019</h3>
+    <!-- <div class="banner-text">from $19.00</div> -->
+    <button type="button" >Shop Now</button>
+    </div>
+    </a>
+    </div>
+  </div>
+    <div class="flex-item">
+  <a href="#">
+    <img src="https://portotheme.com/html/molla/assets/images/demos/demo-9/banners/banner-4.jpg" />
+    <div class="banner-content position-top">
+     <h4>On Sale</h4>
+    <h3>Women's <br> Sportswear</h3>
+    <div class="banner-text">from $19.00</div>
+    <button type="button" >Discover Now</button>
+    </div>
+    </a>
+  </div>
+</div>
+
+<script>
+
+$().ready(function(){
+  $('.slick-carousel').slick({
+    arrows: true,
+    rows: 2,
+    slidesPerRow: 1,
+    centerPadding: "0px",
+    dots: false,
+    slidesToShow: 1,
+    touchThreshold: 500,
+    infinite: false
+  });
+});
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+  </body>
+  </html>
